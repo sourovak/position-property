@@ -1,0 +1,95 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: #636e72;
+}
+
+.position {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid red;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	
+}
+
+.box1{
+	width: 150px;
+	height:150px;
+	background: #81ecec;
+	display: inline-block;
+	margin-left: -5px;
+	
+}
+.box2{
+	width: 150px;
+	height:150px;
+	background: #0984e3;
+	display: inline-block;
+	margin-left: -5px;
+	top: 50px;
+	left: 100px;
+}
+.box3{
+	width: 150px;
+	height:150px;
+	background: #fd79a8;
+	display: inline-block;
+	margin-left: -5px;
+}
+
+.portfolio-image {
+	padding: 100px 0px;
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border: 10px solid #fff;
+	position: relative;
+}
+
+.image img {
+	max-width: 100%;
+	transition: 2s;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	cursor: pointer;
+	visibility: hidden;
+	
+}
+
+.overlay h2 {
+	font-size: 42px;
+	color: #f1f2f6;
+	margin-top: 120px;
+}
+
+.overlay p {
+	font-size: 22px;
+	color: #f1f2f6;
+
+}
+
+.image:hover .overlay {
+	visibility: visible;
+	transition: 2s;
+}
+
+.image img:hover {
+	transform: scale(1.2);
+	
+}
